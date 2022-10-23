@@ -2,6 +2,7 @@
 class Symbol
 {
 public:
+	Symbol() {}
 	Symbol(char symbol);
 	char getSymbol() { return symbol; }
 private:

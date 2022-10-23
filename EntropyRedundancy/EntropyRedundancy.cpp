@@ -3,11 +3,16 @@
 #include "Symbol.h"
 #include "SymbolMessage.h"
 #include "Calculator.h"
+#include "BinaryTree.h"
+
 using std::vector;
 using std::cout;
 using std::cin;
 using std::endl;
 using std::string;
+
+
+
 int main()
 {
 	cout << "Input a message: ";

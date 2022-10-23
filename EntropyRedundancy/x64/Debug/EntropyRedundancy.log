@@ -1,14 +1,6 @@
 ﻿  BinaryTree.cpp
-  Calculator.cpp
-D:\Progaramming\Hanna\EntropyRedundancy\EntropyRedundancy\Calculator.h(11,2): warning C4091: 'static ': ignored on left of 'Calculator' when no variable is declared
-D:\Progaramming\Hanna\EntropyRedundancy\EntropyRedundancy\Calculator.cpp(16,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\Progaramming\Hanna\EntropyRedundancy\EntropyRedundancy\Calculator.cpp(26,40): warning C4244: 'argument': conversion from 'unsigned __int64' to 'double', possible loss of data
-D:\Progaramming\Hanna\EntropyRedundancy\EntropyRedundancy\Calculator.cpp(35,28): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-D:\Progaramming\Hanna\EntropyRedundancy\EntropyRedundancy\Calculator.cpp(40,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
   EntropyRedundancy.cpp
-D:\Progaramming\Hanna\EntropyRedundancy\EntropyRedundancy\Calculator.h(11,2): warning C4091: 'static ': ignored on left of 'Calculator' when no variable is declared
-  SymbolMessage.cpp
-D:\Progaramming\Hanna\EntropyRedundancy\EntropyRedundancy\Calculator.h(11,2): warning C4091: 'static ': ignored on left of 'Calculator' when no variable is declared
+D:\Progaramming\C++\EntropyRedundancy\EntropyRedundancy\Calculator.h(11,2): warning C4091: 'static ': ignored on left of 'Calculator' when no variable is declared
   TreeNode.cpp
   Generating Code...
-  EntropyRedundancy.vcxproj -> D:\Progaramming\Hanna\EntropyRedundancy\x64\Debug\EntropyRedundancy.exe
+  EntropyRedundancy.vcxproj -> D:\Progaramming\C++\EntropyRedundancy\x64\Debug\EntropyRedundancy.exe

@@ -29,12 +29,10 @@ double Calculator::countRedundancy(SymbolMessage sm)
 {
 	return sm.getMaxEntropy() - sm.getEntropy();
 }
-
 int Calculator::maximalStorage(SymbolMessage sm)
 {
 	return sm.getMaxEntropy() * sm.getSymbols().size();
 }
-
 int Calculator::minimalStorage(SymbolMessage sm)
 {
 	return sm.getEntropy() * sm.getSymbols().size();

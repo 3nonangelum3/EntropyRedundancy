@@ -1,11 +1,18 @@
 #pragma once
-#include "Node.h"
-class TreeNode : public Node
+#include "Symbol.h"
+class TreeNode
 {
 public:
-	Node getRight() { return right; }
 	TreeNode(int value);
+	TreeNode(int value, Symbol symbol);
+	static TreeNode Nothing;
+	TreeNode* getRight() { return right; }
+	TreeNode* getLeft() { return left; }
+	int add(TreeNode* newNode);
 private:
-	Node right;
+	int value;
+	Symbol symbol;
+	TreeNode *right = nullptr;
+	TreeNode *left = nullptr;
 };
 

@@ -130,7 +130,6 @@
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="EntropyRedundancy.cpp" />
-    <ClCompile Include="Node.cpp" />
     <ClCompile Include="Symbol.cpp" />
     <ClCompile Include="SymbolMessage.cpp" />
     <ClCompile Include="TreeNode.cpp" />
@@ -138,7 +137,6 @@
   <ItemGroup>
     <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="Calculator.h" />
-    <ClInclude Include="Node.h" />
     <ClInclude Include="SymbolMessage.h" />
     <ClInclude Include="Symbol.h" />
     <ClInclude Include="TreeNode.h" />

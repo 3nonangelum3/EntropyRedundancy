@@ -2,8 +2,10 @@
 #include <string>
 #include "Symbol.h"
 #include <vector>
+#include <map>
 
 using std::vector;
+using std::map;
 
 class SymbolMessage
 {
@@ -12,12 +14,13 @@ public:
 	double getEntropy() { return entropy; }
 	double getMaxEntropy() { return maxEntropy; }
 	double getRedundancy() { return redundancy; }
+	string getMaxEncoding();
+	string getMinEncoding();
 	vector<Symbol> getSymbols() { return symbols; }
-	vector<Symbol> getUniqueSymbols() { return uniqueSymbols; }
+	map<char, int>* getUniqueSymbols() { return &(this->uniqueSymbols); }
 private:
-	int findSymbol(vector<Symbol> array, Symbol symbol);
 	std::string message = "";
 	vector<Symbol> symbols = {};
-	vector<Symbol> uniqueSymbols = {};
+	map<char, int> uniqueSymbols = {};
 	double entropy = 0, maxEntropy = 0, redundancy = 0;
 };

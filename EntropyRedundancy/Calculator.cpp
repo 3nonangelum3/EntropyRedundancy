@@ -1,29 +1,20 @@
 #include "Calculator.h"
-int countOccurrences(SymbolMessage sm, int symbolIndex) {
-	int iter = 0;
-	for (int i = 0; i < sm.getSymbols().size(); i++)
-	{
-		if (sm.getUniqueSymbols()[symbolIndex].getSymbol() == sm.getSymbols()[i].getSymbol())
-		{
-			iter++;
-		}
-	}
-	return iter;
-}
 double Calculator::countEntropy(SymbolMessage sm)
 {
 	double entropy = 0;
-	int length = sm.getUniqueSymbols().size();
-	for (int i = 0; i < length; i++)
+	map<char, int>::iterator iter;
+	map<char, int> symbols = *(sm.getUniqueSymbols());
+	for (iter = symbols.begin(); iter != symbols.end(); iter++)
 	{
-		double P = (double)countOccurrences(sm, i) / sm.getSymbols().size();
+		double P = (double)iter->second / sm.getSymbols().size();
 		entropy += P * -log2(P);
+		iter++;
 	}
 	return entropy;
 }
 double Calculator::countMaxEntropy(SymbolMessage sm)
 {
-	return log2(sm.getUniqueSymbols().size());
+	return log2((*(sm.getUniqueSymbols())).size());
 }
 double Calculator::countRedundancy(SymbolMessage sm)
 {

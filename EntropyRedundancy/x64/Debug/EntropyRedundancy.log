@@ -1,6 +1,17 @@
 ﻿  BinaryTree.cpp
+  Calculator.cpp
+D:\Progaramming\C++\EntropyRedundancy\EntropyRedundancy\Calculator.h(11,2): warning C4091: 'static ': ignored on left of 'Calculator' when no variable is declared
+D:\Progaramming\C++\EntropyRedundancy\EntropyRedundancy\Calculator.cpp(17,45): warning C4244: 'argument': conversion from 'unsigned __int64' to 'double', possible loss of data
+D:\Progaramming\C++\EntropyRedundancy\EntropyRedundancy\Calculator.cpp(25,28): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+D:\Progaramming\C++\EntropyRedundancy\EntropyRedundancy\Calculator.cpp(29,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
   EntropyRedundancy.cpp
 D:\Progaramming\C++\EntropyRedundancy\EntropyRedundancy\Calculator.h(11,2): warning C4091: 'static ': ignored on left of 'Calculator' when no variable is declared
+  Symbol.cpp
+  SymbolMessage.cpp
+D:\Progaramming\C++\EntropyRedundancy\EntropyRedundancy\Calculator.h(11,2): warning C4091: 'static ': ignored on left of 'Calculator' when no variable is declared
+D:\Progaramming\C++\EntropyRedundancy\EntropyRedundancy\SymbolMessage.cpp(63,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Progaramming\C++\EntropyRedundancy\EntropyRedundancy\SymbolMessage.cpp(95,89): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Progaramming\C++\EntropyRedundancy\EntropyRedundancy\SymbolMessage.cpp(112,45): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   TreeNode.cpp
   Generating Code...
   EntropyRedundancy.vcxproj -> D:\Progaramming\C++\EntropyRedundancy\x64\Debug\EntropyRedundancy.exe

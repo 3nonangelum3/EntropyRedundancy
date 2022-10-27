@@ -3,9 +3,8 @@
 class BinaryTree
 {
 public:
-	void push(TreeNode* treeNode) {
-		startNode->add(treeNode);
-	}
+	BinaryTree(TreeNode* startNode);
+	void push(TreeNode* treeNode);
 private:
 	TreeNode* startNode;
 };

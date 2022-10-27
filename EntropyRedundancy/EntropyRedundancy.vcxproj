@@ -129,20 +129,16 @@
   <ItemGroup>
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="Calculator.cpp" />
-    <ClCompile Include="ConnectingTreeNode.cpp" />
     <ClCompile Include="EntropyRedundancy.cpp" />
     <ClCompile Include="Symbol.cpp" />
     <ClCompile Include="SymbolMessage.cpp" />
-    <ClCompile Include="SymbolTreeNode.cpp" />
     <ClCompile Include="TreeNode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="Calculator.h" />
-    <ClInclude Include="ConnectingTreeNode.h" />
     <ClInclude Include="SymbolMessage.h" />
     <ClInclude Include="Symbol.h" />
-    <ClInclude Include="SymbolTreeNode.h" />
     <ClInclude Include="TreeNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

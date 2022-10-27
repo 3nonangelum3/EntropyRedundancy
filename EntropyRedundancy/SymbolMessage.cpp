@@ -71,6 +71,32 @@ string toBinary(int number, int stringLength) {
 	}
 	return bits;
 }
+inline pair<char, int> findMax(map<char, int> map) {
+	int max = map.begin()->second;
+	pair<char, int> maxPair = pair<char, int>(map.begin()->first, max);
+	for (auto& iter : map)
+	{
+		if (iter.second > max)
+		{
+			max = iter.second;
+			maxPair = iter;
+		}
+	}
+	return maxPair;
+}
+inline pair<char, int> findMin(map<char, int> map) {
+	int min = map.begin()->second;
+	pair<char, int> minPair = pair<char, int>(map.begin()->first, min);
+	for (auto& iter : map)
+	{
+		if (iter.second < min)
+		{
+			min = iter.second;
+			minPair = iter;
+		}
+	}
+	return minPair;
+}
 string SymbolMessage::getMaxEncoding()
 {
 	map<char, string> symbolEncoding = {};
@@ -81,18 +107,10 @@ string SymbolMessage::getMaxEncoding()
 	map<char, int> us = this->uniqueSymbols;
 	for (auto& iter : this->uniqueSymbols)
 	{
-		int max = us.begin()->second;
-		pair<char, int> maxPair = pair<char, int>(us.begin()->first, max);
-		for (auto& iter : us)
-		{
-			if (iter.second > max)
-			{
-				max = iter.second;
-				maxPair = iter;
-			}
-		}
-		us.erase(maxPair.first);
-		symbolEncoding.insert(pair<char, string>(maxPair.first, toBinary((*currentBit)++, this->maxEntropy)));
+		pair<char, int> max = findMax(us);
+		us.erase(max.first);
+		symbolEncoding.insert(pair<char, string>(max.first, 
+			toBinary((*currentBit)++, this->maxEntropy)));
 	}
 	for (auto& i : this->symbols)
 	{
@@ -109,7 +127,12 @@ string SymbolMessage::getMaxEncoding()
 }
 string SymbolMessage::getMinEncoding()
 {
-	TreeNode treeNode(this->getSymbols().size());
-	BinaryTree binaryTree(&treeNode);
+	map<char, int> us = this->uniqueSymbols;
+	for (auto& i : us)
+	{
+		pair<char, int> max = findMin(us);
+		us.erase(max.first);
+
+	}
 	return string();
 }

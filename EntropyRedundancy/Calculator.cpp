@@ -8,7 +8,6 @@ double Calculator::countEntropy(SymbolMessage sm)
 	{
 		double P = (double)iter->second / sm.getSymbols().size();
 		entropy += P * -log2(P);
-		iter++;
 	}
 	return entropy;
 }

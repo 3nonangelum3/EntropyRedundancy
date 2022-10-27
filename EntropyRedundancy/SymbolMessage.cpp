@@ -126,12 +126,18 @@ string SymbolMessage::getMaxEncoding()
 }
 string SymbolMessage::getMinEncoding()
 {
+	TreeNode node = TreeNode();
+	BinaryTree binaryTree(&node);
 	map<char, int> us = this->uniqueSymbols;
+	vector<TreeNode> nodes = {};
 	for (auto& i : us)
 	{
-		pair<char, int> max = findMin(us);
+		pair<char, int> max = findMax(us);
 		us.erase(max.first);
-
+		TreeNode* newNode = new TreeNode(max.second, Symbol(max.first));
+		nodes.push_back(*newNode);
+		binaryTree.push(&(nodes[nodes.size()-1]));
+		delete newNode;
 	}
 	return string();
 }

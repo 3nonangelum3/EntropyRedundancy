@@ -2,4 +2,5 @@
 D:\Progaramming\C++\EntropyRedundancy\EntropyRedundancy\Calculator.h(11,2): warning C4091: 'static ': ignored on left of 'Calculator' when no variable is declared
 D:\Progaramming\C++\EntropyRedundancy\EntropyRedundancy\SymbolMessage.cpp(62,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 D:\Progaramming\C++\EntropyRedundancy\EntropyRedundancy\SymbolMessage.cpp(112,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Progaramming\C++\EntropyRedundancy\EntropyRedundancy\SymbolMessage.cpp(134,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   EntropyRedundancy.vcxproj -> D:\Progaramming\C++\EntropyRedundancy\x64\Debug\EntropyRedundancy.exe

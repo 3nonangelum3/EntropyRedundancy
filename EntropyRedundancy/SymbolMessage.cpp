@@ -128,16 +128,28 @@ string SymbolMessage::getMinEncoding()
 {
 	TreeNode node = TreeNode();
 	BinaryTree binaryTree(&node);
+
 	map<char, int> us = this->uniqueSymbols;
-	vector<TreeNode> nodes = {};
-	for (auto& i : us)
+	vector<TreeNode*> nodes = {};
+	int length = us.size();
+	for (int i = 0; i < length; i++)
 	{
 		pair<char, int> max = findMax(us);
 		us.erase(max.first);
 		TreeNode* newNode = new TreeNode(max.second, Symbol(max.first));
-		nodes.push_back(*newNode);
-		binaryTree.push(&(nodes[nodes.size()-1]));
-		delete newNode;
+		nodes.push_back(newNode);
+		binaryTree.push(nodes[nodes.size()-1]);
 	}
-	return string();
+	string result = "";
+	for (auto& i : this->symbols)
+	{
+		for (auto& node : nodes) {
+			if (node->getSymbol().getSymbol() == i.getSymbol())
+			{
+				result += node->getPath();
+				break;
+			}
+		}
+	}
+	return result;
 }

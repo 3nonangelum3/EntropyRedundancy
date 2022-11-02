@@ -31,4 +31,5 @@ int main()
 	cout << sm.getMaxEncoding() << " (" << Calculator::maximalStorage(sm) << " bit)\n";
 	cout << sm.getMinEncoding() << " (" << Calculator::minimalStorage(sm) << " bit)\n";
 #pragma endregion
+	system("pause");
 }
